@@ -1,20 +1,20 @@
 # MoneyMentor
 
-Welcome to **MoneyMentor**, your personal financial literacy coach! This app brings together a robust Python backend, a sleek ReactJS frontend, and the powerful WorqHat API to help you on your financial journey.
+Welcome to **MoneyMentor**, your personal financial literacy coach! This app is here to help you on your financial journey.
 
 ---
 
-## What Makes MoneyMentor Special?
+## TechStack:
 - **Backend:** Powered by Python (Flask server)
-- **Frontend:** Built with ReactJS for a smooth user experience
-- **API:** Enhanced with WorqHat, offering free initial trial credits
+- **Frontend:** Built with ReactJS 
+- **API:** Enhanced with WorqHat, (free initial trial credits)
 
 ---
 
 ## How to Get Started
 
 ### Step 1: Launch the Flask Server
-1. Open your terminal and navigate to the **`financial coach app`** folder.
+1. Open your terminal and navigate to the **`financial coach app`** folder. (assuming that you download all the files in a folder called "financial coach app")
 2. Start the Flask server by running:
    ```bash
    python app.py
@@ -34,8 +34,8 @@ Welcome to **MoneyMentor**, your personal financial literacy coach! This app bri
 ## How to Use MoneyMentor
 Once both servers are running:
 - Open your web browser and head to `localhost:3000`.
-- Explore the app and let MoneyMentor guide you toward financial literacy.
+
 
 ---
 
-Thank you for choosing MoneyMentor! We’re excited to be part of your financial journey.
+
