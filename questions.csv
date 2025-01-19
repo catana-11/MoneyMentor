@@ -1,0 +1,16 @@
+question,option_1,points_1,option_2,points_2,option_3,points_3
+"What is your risk tolerance when it comes to investments?","Low Risk",1,"Medium Risk",3,"High Risk",5
+"How long do you typically hold onto an investment?","Short Term",1,"Medium Term",3,"Long Term",5
+"How do you usually feel about market downturns?","Panic",1,"Concerned, but stable",3,"Opportunity to buy",5
+"What is your goal for investing?","Preserve Capital",1,"Steady Growth",3,"Maximum Return",5
+"How do you approach new investment opportunities?","Cautious, prefer proven investments",1,"Explore, but do research",3,"Jump at high-risk, high-reward opportunities",5
+"What type of investments do you prefer?","Bonds and other low-risk options",1,"A mix of stocks and bonds",3,"Stocks, start-ups, or high-risk ventures",5
+"When the market is volatile, how do you react?","I sell off my investments to avoid losses",1,"I hold steady and don’t make any changes",3,"I see it as an opportunity to buy at lower prices",5
+"What is your preferred investment horizon?","Short-term",1,"Medium-term",3,"Long-term",5
+"How much of your portfolio would you allocate to high-risk investments?","Less than 10%",1,"10-30%",3,"More than 30%",5
+"How do you feel about ethical investing (e.g., companies that align with environmental or social values)?","Not a priority",1,"I consider it if the financials are strong",3,"I prioritize ethical investing, regardless of financial return",5
+"How do you typically research investments?","I rely on advice from financial experts and advisors",1,"I do some research myself, but value expert opinions",3,"I do my own research and make decisions independently",5
+"How do you view debt in terms of investment?","I avoid any kind of debt",1,"I consider leveraging debt in some situations",3,"I actively use debt to amplify returns",5
+"What types of industries do you prefer to invest in?","Established, stable industries",1,"Growing industries with moderate risk",3,"Emerging, high-growth industries",5
+"How do you handle setbacks in your investments?","I get discouraged and reduce my exposure",1,"I adjust my strategy but stay invested",3,"I view setbacks as learning experiences and keep going",5
+"What are your feelings toward diversification?","I prefer to focus on a few solid investments",1,"I believe in balancing risks through diversification",3,"I diversify across many sectors and types of investments",5

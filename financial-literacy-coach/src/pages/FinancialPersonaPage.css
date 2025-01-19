@@ -1,0 +1,43 @@
+.financial-persona-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.question {
+  opacity: 1;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.question-answered {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.option-button:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.option-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option-button:hover {
+  background-color: #45a049;
+}
+
+.loading-message {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.result {
+  margin-top: 20px;
+}
