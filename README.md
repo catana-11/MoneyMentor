@@ -32,3 +32,9 @@ Welcome to **MoneyMentor**, your personal financial literacy coach! This app is 
 2. Start the Flask server by running:
    ```bash
    python app.py
+
+### Step 2: Launch the React App
+1. Open your terminal and navigate to the **`financial-literacy-coach`** folder. 
+2. Start the server by running:
+   ```bash
+   npm start
