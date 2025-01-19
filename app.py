@@ -301,7 +301,18 @@ def get_esg_info():
 
 #----------------THIS IS THE PERSONA CODE---------#
 
+def load_personas():
+    personas = {}
+    with open('persona.csv', mode='r') as file:
+        csv_reader = csv.DictReader(file)
+        for row in csv_reader:
+            personas[row['title']] = {
+                'definition': row['definition'],
+                'image': row['image']
+            }
+    return personas
 
+personas = load_personas()
 
 def load_questions():
     questions = []
@@ -323,38 +334,64 @@ def get_questions():
     questions = load_questions()
     return jsonify(questions), 200
 
+
 @app.route('/api/calculate-personality', methods=['POST'])
 def calculate_personality():
     answers = request.json.get('answers') 
-
- 
     score = sum(answers)
-    
-    # score range logic: (can be changed to a better logic later)
+
+    # Adjust the logic based on your scoring ranges
     if score <= 15:
         personality = "Conservative Investor"
+        definition = "A person who prioritizes stability and low risk, preferring safer investments like bonds and savings accounts."
+        image = "/images/conservative.png"
     elif 16 <= score <= 25:
         personality = "Cautious Investor"
+        definition = "A person who is somewhat risk-averse, preferring to focus on steady but lower returns, avoiding high volatility."
+        image = "/images/cautious.png"
     elif 26 <= score <= 40:
         personality = "Balanced Investor"
+        definition = "A person who seeks a balance between risk and reward, typically investing in a mix of stocks and bonds."
+        image = "/images/balanced.png"
     elif 41 <= score <= 55:
         personality = "Opportunistic Investor"
+        definition = "A person who focuses on high-reward, short-term investments, often taking advantage of market trends."
+        image = "/images/opportunistic.png"
     elif 56 <= score <= 70:
         personality = "Aggressive Investor"
+        definition = "A person willing to take on high risk to achieve high returns, often investing in speculative stocks."
+        image = "/images/aggressive.png"
     elif 71 <= score <= 85:
         personality = "Risk-Tolerant Investor"
+        definition = "An individual who is comfortable with risk and actively seeks out higher-risk investment opportunities."
+        image = "/images/risk_tolerant.png"
     elif 86 <= score <= 100:
         personality = "Value Investor"
+        definition = "A person who seeks undervalued stocks or assets, with the intention to buy and hold until the market recognizes their true worth."
+        image = "/images/value.png"
     elif 101 <= score <= 115:
         personality = "Growth Investor"
+        definition = "A person who focuses on companies with high growth potential, typically in emerging industries."
+        image = "/images/growth.png"
     elif 116 <= score <= 130:
         personality = "Income-Focused Investor"
+        definition = "An investor who seeks steady income from investments, such as dividends or interest."
+        image = "/images/income_focused.png"
     elif 131 <= score <= 145:
         personality = "Speculative Investor"
+        definition = "An individual who looks for high-risk, high-reward opportunities, including speculative ventures."
+        image = "/images/speculative.png"
     else:
         personality = "Ethical Investor"
+        definition = "An investor who prioritizes companies that adhere to strong ethical, environmental, and social standards."
+        image = "/images/ethical.png"
     
-    return jsonify({'result': personality}), 200
+    return jsonify({
+        'result': personality,
+        'definition': definition,
+        'image': image
+    }), 200
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -6,6 +6,8 @@ const FinancialPersonaPage = () => {
   const [answers, setAnswers] = useState([]); // Store answers
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0); // Track current question index
   const [result, setResult] = useState(''); // Store result
+  const [definition, setDefinition] = useState(''); // Store definition
+  const [image, setImage] = useState(''); // Store image URL
   const [isLoading, setIsLoading] = useState(false); // Track if the result is being calculated
   const [isQuestionAnswered, setIsQuestionAnswered] = useState(false);  // Track if a question is answered
 
@@ -47,7 +49,9 @@ const FinancialPersonaPage = () => {
       });
       if (response.ok) {
         const data = await response.json();
-        setResult(data.result);  // Set the result returned 
+        setResult(data.result);  // Set the result returned
+        setDefinition(data.definition); // Set the definition
+        setImage(data.image); // Set the image URL
       } else {
         console.error('Failed to calculate result');
       }
@@ -94,6 +98,8 @@ const FinancialPersonaPage = () => {
         <div className="result">
           <h2>Your result is:</h2>
           <p>{result}</p>
+          <p>{definition}</p>
+          {image && <img src={image} alt={result} className="persona-image" />}
         </div>
       )}
     </div>
