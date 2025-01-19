@@ -161,7 +161,9 @@ def get_financial_advice():
                 - Provide advice in a user-friendly, HTML formatted response with bullet points, numbered lists, and appropriate line breaks.
                 - Include a couple of possible real-life investment split-up scenarios based on current investment rates.
                 - Evaluate and recommend a good plan based on the above details.
-                - Refer various economic and finanicial sources from TRSUTED available sites online to base the content off of. 
+                - Refer various economic and finanicial sources from TRSUTED available sites online to base the content off of.
+                - Include detail information about stocks and funds if user asks for so. Use real time data to get it off of trusted sites.
+                - DO NOT include any python calculations in output. Output should be purely result text. Peform any and every calculation server side only.
 
                 Please ensure that the response directly addresses the user’s situation without formalities like “Sure, I will include this feature”. Provide concise and actionable advice.
                 """
