@@ -165,7 +165,7 @@ def get_financial_advice():
                 - Include detail information about stocks and funds if user asks for so. Use real time data to get it off of trusted sites.
                 - DO NOT include any python calculations in output. Output should be purely result text. Peform any and every calculation server side only.
 
-                Please ensure that the response directly addresses the user’s situation without formalities like “Sure, I will include this feature”. Provide concise and actionable advice.
+                Please ensure that the response directly addresses the user’s situation WITHOUT formalities like “Sure, I will include this feature/ you want it in html format”. Give back answer which makes sense to an external user. Provide concise and actionable advice.
                 """
 
         
